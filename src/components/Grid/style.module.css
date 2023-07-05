@@ -1,0 +1,29 @@
+.container_grid {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    max-width: 100vw;
+    grid-template-areas:
+        "h h"
+        "lb b";
+    grid-template-columns: 250px 1fr ;
+    grid-template-rows: 95px 500px ;
+
+}
+
+.h {
+    grid-area: h;
+    border: black solid 3px;
+    
+    width: 100vw;
+}
+
+.b {
+    grid-area: b;
+    border: red solid 3px;
+}
+
+.lb {
+    grid-area: lb;
+    border: purple solid 3px;
+}
